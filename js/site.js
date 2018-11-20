@@ -49,3 +49,36 @@ function hslColor(h, s, l) {
 
 
 /* START WRITING YOUR CODE BELOW */
+function keypressed(selector) {
+  var Element = document.querySelector(selector);
+    Element.classList.add("pressed")
+}
+
+function myEventHandler(e) {
+  console.log (e);
+
+   if(e.keyCode == 99) {
+    console.log ("c");
+    keypressed(".g4");
+   }
+
+   if(e.keyCode == 118) {
+    console.log ("v");
+    keypressed(".y4");
+   }
+
+   if(e.keyCode == 98) {
+    console.log ("b");
+    keypressed(".r4");
+   }
+
+   if(e.keyCode == 110) {
+    console.log ("n");
+    keypressed(".b4");
+   }
+}
+
+
+window.addEventListener("keypress", myEventHandler, false);
+
+

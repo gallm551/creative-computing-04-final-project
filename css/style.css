@@ -10,8 +10,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  padding-top: 20px;
-  padding-left: 20px;
   min-width: 100vw;
   min-height: 100vh;
 }
@@ -28,73 +26,75 @@ body {
 .content {
   height: 100%;
   width: 100%;
-  font-family: 'Paytone One', sans-serif;
-
 }
 
-.text {
-  padding-bottom: 5px;
-  font-size: 40px;
+.twiddler {
+  padding: 10px;
+  color: red;
+  font-size: 60px;  
+  font-family: 'Fontdiner Swanky', cursive;
   text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 2px dashed red;
 }
 
-.dotred {
-  margin-left: 50px;
-  margin-top: 10px;
-  height: 100px;
-  width: 100px;
+.spin {
+  margin: 20px;
+  margin-left: 800px;
+  width: 25vw;
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
   background-color: red;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+.circle {
+  margin: 10px;
+  margin-left: 800px;
+  height: 400px;
+  width: 25vw;
   border-radius: 50%;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
   display: inline-block;
 }
 
-.dotblu {
-  margin-left: 50px;
-  margin-top: 10px;
+.dotgrn, .dotyell, .dotred, .dotblu {
+  margin-left: 40px;
+  margin-bottom: 40px;
   height: 100px;
   width: 100px;
-  background-color: blue;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.dotyell {
-  margin-left: 50px;
-  margin-top: 10px;
-  height: 100px;
-  width: 100px;
-  background-color: yellow;
   border-radius: 50%;
   display: inline-block;
 }
 
 .dotgrn {
-  margin-left: 50px;
-  margin-top: 10px;
-  height: 100px;
-  width: 100px;
+  margin-left: 0;
   background-color: green;
-  border-radius: 50%;
-  display: inline-block;
 }
 
-.arrow {
-  margin-left: 50px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 25px 25px 25px;
-  border-color: transparent transparent #000000 transparent;
+.dotyell {
+  background-color: yellow;
 }
 
-.circle {
-  margin-left: 80%;
-  margin-top: 0;
-  height: 250px;
-  width: 250px;
-  font-size: 10px;
-  background-color: black;
-  color: white;
-  border-radius: 50%;
-  display: inline-block;
+.dotred {
+  background-color: red;
+}
+
+.dotblu {
+  background-color: blue;
+}
+
+
+.pressed {
+  transform: scale(0.75);
 }
