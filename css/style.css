@@ -10,6 +10,8 @@ html {
 body {
   margin: 0;
   padding: 0;
+  padding-top: 20px;
+  padding-left: 20px;
   min-width: 100vw;
   min-height: 100vh;
 }
@@ -26,4 +28,73 @@ body {
 .content {
   height: 100%;
   width: 100%;
+  font-family: 'Paytone One', sans-serif;
+
+}
+
+.text {
+  padding-bottom: 5px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.dotred {
+  margin-left: 50px;
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotblu {
+  margin-left: 50px;
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotyell {
+  margin-left: 50px;
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotgrn {
+  margin-left: 50px;
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.arrow {
+  margin-left: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 25px 25px 25px;
+  border-color: transparent transparent #000000 transparent;
+}
+
+.circle {
+  margin-left: 80%;
+  margin-top: 0;
+  height: 250px;
+  width: 250px;
+  font-size: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
 }
