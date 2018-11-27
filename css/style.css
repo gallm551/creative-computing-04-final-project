@@ -12,7 +12,7 @@ body {
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .center {
@@ -35,9 +35,8 @@ body {
   font-size: 50px;  
   font-family: 'Fontdiner Swanky', cursive;
   text-align: center;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: static;
+  display: block;
   background-color: white;
   border-bottom: 2px dashed red;
 }
@@ -72,60 +71,61 @@ body {
 
 .mat {
   margin: 30px;
-  background-color: white;
+  margin-left: 50px;
+  padding: 20px;
   border-width: 1px;
   border-color: darkgrey;
   border-style: solid;
   display: inline-block;
 }
 
-.fingers {
-  top: 30px;
-  left: 56%;
+.direction {
+  top: 48px;
+  left: 58vw;
   position: absolute;
   transform: scale(0.75);
 }
 
 .circle {
-  top: 50px;
-  left: 55%;
+  top: 48px;
+  left: 58vw;
   position: absolute;
-  transform: scale(0.5);
+  transform: scale(0.65);
   transition: all 2s;
 }
 
 .stick {
-  top: 165px;
-  left: 68%;
-  width: 10px;
-  transform: scale(0.15);
+  top: 0px;
+  left: 58vw;
   position: absolute;
-  background-color: transparent;
+  transform: scale(0.15);
   transition: all 2s;
 }
 
 .instructions {
-  margin-left: 40px;
-  background-color: yellow;
-  font-size: 15px;
+  margin-left: 50px;
+  margin-right: 85vw;
+  padding: 5px;
+  background-color: darkseagreen;
   font-family: 'Dosis', sans-serif;
-  display: block;
+  display: inline-block;
 }
 
 .cheatsheet {
-  top:73.20%;
-  left:160px;
-  border-width: 1px;
-  border-color: black;
+  top: 79.75vh;
+  left: 250px;
+  padding: 5px;
+  background-color: lightsteelblue;
   font-family: 'Dosis', sans-serif;
-  position: absolute;
+  display: inline-block;
+  position: fixed;
 }
 
 .button {
-  margin: 20px;
+  margin: 10px;
   width: 25vw;
-  top: 60vh;
-  left: 60%;
+  top: 65vh;
+  left: 63vw;
   font-size: 60px;
   font-weight: bolder;
   font-stretch:semi-expanded;
@@ -141,5 +141,10 @@ body {
 
 .pressed {
   transform: scale(0.75);
+}
+
+.unpressed 
+{
+  transform: scale(5);
 }
 

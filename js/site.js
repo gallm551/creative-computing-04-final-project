@@ -49,6 +49,8 @@ function hslColor(h, s, l) {
 
 
 /* START WRITING YOUR CODE BELOW */
+
+// Keypress Smaller
 function keypressed(selector) {
   var Element = document.querySelector(selector);
     Element.classList.add("pressed")
@@ -181,11 +183,12 @@ function myEventHandler(e) {
 window.addEventListener("keypress", myEventHandler, false);
 
 
+// Spin the circle/wheel!
 function clickspin() {
   var degrees = randomNumber(0, 3);
   degrees = degrees * 90 + 360 * 3;
   var wheel = document.querySelector(".circle");
-  wheel.style.transform = "scale(0.5) rotate("+ degrees + "deg)";
+  wheel.style.transform = "scale(0.65) rotate("+ degrees + "deg)";
 }
 
 var spinbutton = document.querySelector(".spin")
@@ -193,9 +196,9 @@ var spinbutton = document.querySelector(".spin")
 spinbutton.addEventListener("click", clickspin, false);
 
 
+// Spin the stick/arrow!
 function clickstick() {
-  var degrees = randomNumber(1, 4);
-  degrees = degrees * 45 + 360 * 3;
+  var degrees = randomNumber(1, 1440);
   var stick = document.querySelector(".stick");
   stick.style.transform = "scale(0.15) rotate("+ degrees + "deg)";
 }
