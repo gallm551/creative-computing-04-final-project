@@ -194,8 +194,8 @@ spinbutton.addEventListener("click", clickspin, false);
 
 
 function clickstick() {
-  var degrees = randomNumber(0, 5);
-  degrees = degrees * 45 + 320 * 4;
+  var degrees = randomNumber(1, 4);
+  degrees = degrees * 45 + 360 * 3;
   var stick = document.querySelector(".stick");
   stick.style.transform = "scale(0.15) rotate("+ degrees + "deg)";
 }
