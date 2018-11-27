@@ -57,28 +57,126 @@ function keypressed(selector) {
 function myEventHandler(e) {
   console.log (e);
 
+    if(e.keyCode == 50) {
+    console.log ("2");
+    keypressed(".g1");
+    }
+
+    if(e.keyCode == 51) {
+    console.log ("3");
+    keypressed(".g2");
+   }
+
+   if(e.keyCode == 52) {
+    console.log ("4");
+    keypressed(".g3");
+   }
+
+   if(e.keyCode == 53) {
+    console.log ("5");
+    keypressed(".g4");
+   }
+
+   if(e.keyCode == 54) {
+    console.log ("6");
+    keypressed(".g5");
+   }
+
+   if(e.keyCode == 55) {
+    console.log ("7");
+    keypressed(".g6");
+    }
+
+    if(e.keyCode == 119) {
+    console.log ("w");
+    keypressed(".y1");
+    }
+
+    if(e.keyCode == 101) {
+    console.log ("e");
+    keypressed(".y2");
+   }
+
+   if(e.keyCode == 114) {
+    console.log ("r");
+    keypressed(".y3");
+   }
+
+   if(e.keyCode == 116) {
+    console.log ("t");
+    keypressed(".y4");
+   }
+
+   if(e.keyCode == 121) {
+    console.log ("y");
+    keypressed(".y5");
+   }
+
+   if(e.keyCode == 117) {
+    console.log ("u");
+    keypressed(".y6");
+    }
+
+   if(e.keyCode == 115) {
+    console.log ("s");
+    keypressed(".r1");
+   }
+
+   if(e.keyCode == 100) {
+    console.log ("d");
+    keypressed(".r2");
+   }
+
+   if(e.keyCode == 102) {
+    console.log ("f");
+    keypressed(".r3");
+   }
+
+   if(e.keyCode == 103) {
+    console.log ("g");
+    keypressed(".r4");
+   }
+
+   if(e.keyCode == 104) {
+    console.log ("h");
+    keypressed(".r5");
+   }
+
+   if(e.keyCode == 106) {
+    console.log ("j");
+    keypressed(".r6");
+    }
+
+    if(e.keyCode == 120) {
+    console.log ("x");
+    keypressed(".b1");
+   }
+
    if(e.keyCode == 99) {
     console.log ("c");
-    keypressed(".g4");
+    keypressed(".b2");
    }
 
    if(e.keyCode == 118) {
     console.log ("v");
-    keypressed(".y4");
+    keypressed(".b3");
    }
 
    if(e.keyCode == 98) {
     console.log ("b");
-    keypressed(".r4");
+    keypressed(".b4");
    }
 
    if(e.keyCode == 110) {
     console.log ("n");
-    keypressed(".b4");
-   }
+    keypressed(".b5");
+    }
+
+    if(e.keyCode == 109) {
+    console.log ("m");
+    keypressed(".b6");
+    }
 }
 
-
 window.addEventListener("keypress", myEventHandler, false);
-
 

@@ -11,7 +11,8 @@ body {
   margin: 0;
   padding: 0;
   min-width: 100vw;
-  min-height: 100vh;
+  min-height: 120vh;
+  overflow: scroll;
 }
 
 .center {
@@ -28,10 +29,10 @@ body {
   width: 100%;
 }
 
-.twiddler {
-  padding: 10px;
+.titlebar {
+  padding: 7px;
   color: red;
-  font-size: 60px;  
+  font-size: 50px;  
   font-family: 'Fontdiner Swanky', cursive;
   text-align: center;
   position: -webkit-sticky;
@@ -41,60 +42,74 @@ body {
   border-bottom: 2px dashed red;
 }
 
-.spin {
+.subtitle {
+  color: black;
+  font-size: 30px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.dot {
+  margin: 15px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.grn {
+  background-color: green;
+}
+.yell {
+  background-color: yellow;
+}
+.red {
+  background-color: red;
+}
+.blu {
+  background-color: blue;
+}
+
+.row1, .row2, .row3, .row4, .row5, .row6 {
+  display:inline-block;
+}
+
+.mat {
   margin: 20px;
-  margin-left: 800px;
+  background-color: white;
+  border-width: 1px;
+  border-color: darkgrey;
+  border-style: solid;
+  display: inline-block;
+}
+
+.button {
+  margin: 20px;
   width: 25vw;
   font-size: 60px;
   font-weight: bolder;
+  font-stretch:semi-expanded;
   color: white;
   background-color: red;
   border-radius: 10px;
   text-align: center;
   font-family: 'Dosis', sans-serif;
   display: inline-block;
-  position: relative;
+  transform-origin: center;
 }
-
-.circle {
-  margin: 10px;
-  margin-left: 800px;
-  height: 400px;
-  width: 25vw;
-  border-radius: 50%;
-  background-color: white;
-  border-style: solid;
-  border-color: black;
-  display: inline-block;
-}
-
-.dotgrn, .dotyell, .dotred, .dotblu {
-  margin-left: 40px;
-  margin-bottom: 40px;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.dotgrn {
-  margin-left: 0;
-  background-color: green;
-}
-
-.dotyell {
-  background-color: yellow;
-}
-
-.dotred {
-  background-color: red;
-}
-
-.dotblu {
-  background-color: blue;
-}
-
 
 .pressed {
   transform: scale(0.75);
 }
+
+
+@keyframes rotatecircle {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center;
+    transform: scale(0.5);
+  }
+  100% {
+    transform: rotate(1260deg);
+    transform-origin: center;
+    transform: scale(0.5);
+
+  }
