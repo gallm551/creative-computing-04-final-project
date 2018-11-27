@@ -54,7 +54,6 @@ body {
   width: 100px;
   border-radius: 50%;
 }
-
 .grn {
   background-color: green;
 }
@@ -67,13 +66,12 @@ body {
 .blu {
   background-color: blue;
 }
-
 .row1, .row2, .row3, .row4, .row5, .row6 {
   display:inline-block;
 }
 
 .mat {
-  margin: 20px;
+  margin: 30px;
   background-color: white;
   border-width: 1px;
   border-color: darkgrey;
@@ -81,9 +79,54 @@ body {
   display: inline-block;
 }
 
+.fingers {
+  top: 30px;
+  left: 56%;
+  position: absolute;
+  transform: scale(0.75);
+}
+
+.circle {
+  top: 50px;
+  left: 55%;
+  position: absolute;
+  transform: scale(0.5);
+  transition: all 2s;
+}
+
+.stick {
+  top: 165px;
+  left: 68%;
+  width: 10px;
+  transform: scale(0.15);
+  position: absolute;
+  background-color: transparent;
+  transition: all 2s;
+}
+
+.instructions {
+  margin-left: 40px;
+  border-width: 1px;
+  border-color: black;
+  font-size: 15px;
+  font-family: 'Dosis', sans-serif;
+  display: block;
+}
+
+.cheatsheet {
+  top:73.20%;
+  left:160px;
+  border-width: 1px;
+  border-color: black;
+  font-family: 'Dosis', sans-serif;
+  position: absolute;
+}
+
 .button {
   margin: 20px;
   width: 25vw;
+  top: 60vh;
+  left: 60%;
   font-size: 60px;
   font-weight: bolder;
   font-stretch:semi-expanded;
@@ -94,22 +137,10 @@ body {
   font-family: 'Dosis', sans-serif;
   display: inline-block;
   transform-origin: center;
+  position: absolute;
 }
 
 .pressed {
   transform: scale(0.75);
 }
 
-
-@keyframes rotatecircle {
-  0% {
-    transform: rotate(0deg);
-    transform-origin: center;
-    transform: scale(0.5);
-  }
-  100% {
-    transform: rotate(1260deg);
-    transform-origin: center;
-    transform: scale(0.5);
-
-  }

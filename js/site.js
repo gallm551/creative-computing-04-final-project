@@ -180,3 +180,30 @@ function myEventHandler(e) {
 
 window.addEventListener("keypress", myEventHandler, false);
 
+
+function clickspin() {
+  var degrees = randomNumber(0, 3);
+  degrees = degrees * 90 + 360 * 3;
+  var wheel = document.querySelector(".circle");
+  wheel.style.transform = "scale(0.5) rotate("+ degrees + "deg)";
+}
+
+var spinbutton = document.querySelector(".spin")
+
+spinbutton.addEventListener("click", clickspin, false);
+
+
+function clickstick() {
+  var degrees = randomNumber(0, 5);
+  degrees = degrees * 45 + 320 * 4;
+  var stick = document.querySelector(".stick");
+  stick.style.transform = "rotate("+ degrees + "deg)";
+}
+
+var spinbutton = document.querySelector(".spin")
+
+spinbutton.addEventListener("click", clickstick, false);
+
+
+
+
