@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 100vw;
-  min-height: 120vh;
+  min-height: 100vh;
   overflow: scroll;
 }
 
@@ -106,8 +106,7 @@ body {
 
 .instructions {
   margin-left: 40px;
-  border-width: 1px;
-  border-color: black;
+  background-color: yellow;
   font-size: 15px;
   font-family: 'Dosis', sans-serif;
   display: block;

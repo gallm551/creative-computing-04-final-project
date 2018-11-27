@@ -197,7 +197,7 @@ function clickstick() {
   var degrees = randomNumber(0, 5);
   degrees = degrees * 45 + 320 * 4;
   var stick = document.querySelector(".stick");
-  stick.style.transform = "rotate("+ degrees + "deg)";
+  stick.style.transform = "scale(0.15) rotate("+ degrees + "deg)";
 }
 
 var spinbutton = document.querySelector(".spin")
